@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BIN Checker</string>
+    <string name="bin_label">Enter the first digits of a card number (BIN/IIN):</string>
+    <string name="btn_name">START</string>
+</resources>
