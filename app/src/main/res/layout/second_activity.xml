@@ -1,244 +1,287 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:divider="@drawable/empty_tall_divider"
+    android:orientation="vertical"
     android:padding="8dp"
     android:showDividers="middle"
-    android:divider="@drawable/empty_tall_divider"
-    android:orientation="vertical">
+    tools:context=".SecondActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-    <TextView
-        android:text="BIN"
-        android:textColor="@color/grey"
-        android:layout_weight="80"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/bin"
-        android:text="0000 0000"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:layout_weight="20"
-        android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:text="@string/text_bin"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="0000 0000"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
     </LinearLayout>
+
     <TextView
-        android:text="SCHEME"
-        android:textSize="20dp"
-        android:textColor="@color/grey"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/text_scheme"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
     <TextView
         android:id="@+id/scheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Visa"
-        android:textSize="20dp"
-        android:textColor="@color/black"
         android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
     <TextView
-        android:text="BRAND"
-        android:textSize="20dp"
-        android:textColor="@color/grey"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/text_brand"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
     <TextView
         android:id="@+id/brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Visa/Dankort"
-        android:textSize="20dp"
-        android:textColor="@color/black"
         android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
     <TextView
-        android:text="CARD NUMBER"
-        android:textSize="20dp"
-        android:textColor="@color/grey"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/text_card_number"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:text="LENGTH"
-            android:textColor="@color/grey"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/text_length"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="20dp" />
+
         <TextView
             android:id="@+id/number_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:text="16"
-            android:textSize="20dp"
+            android:textAlignment="center"
             android:textColor="@color/black"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:textSize="20dp" />
+
         <TextView
-            android:text="LUHN"
-            android:textColor="@color/grey"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:textSize="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/text_luhn"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="20dp" />
+
         <TextView
             android:id="@+id/number_luhn"
-            android:text="Yes"
-            android:textSize="20dp"
-            android:textColor="@color/black"
-            android:layout_weight="2"
-            android:textAlignment="center"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Yes"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
     </LinearLayout>
+
     <TextView
-        android:text="TYPE"
-        android:textSize="20dp"
-        android:textColor="@color/grey"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/text_type"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
     <TextView
         android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Debit"
-        android:textSize="20dp"
-        android:textColor="@color/black"
         android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
     <TextView
-        android:text="PREPAID"
-        android:textSize="20dp"
-        android:textColor="@color/grey"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/text_prepaid"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
     <TextView
         android:id="@+id/prepaid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="No"
-        android:textSize="20dp"
-        android:textColor="@color/black"
         android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
     <TextView
-        android:text="COUNTRY"
-        android:textSize="20dp"
-        android:textColor="@color/grey"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/text_country"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:id="@+id/country_alpha2"
-            android:text="DK"
-            android:textColor="@color/black"
-            android:layout_weight="80"
-            android:textAlignment="center"
-            android:textSize="15dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:text="DK"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
         <TextView
             android:id="@+id/country_name"
-            android:text="Denmark"
-            android:textSize="20dp"
-            android:textColor="@color/black"
-            android:layout_weight="20"
-            android:textAlignment="center"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="Denmark"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:text="latitude:"
-            android:textColor="@color/grey"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:textSize="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/text_latitude"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="16dp" />
+
         <TextView
             android:id="@+id/country_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:text="56"
-            android:textSize="16dp"
             android:textColor="@color/black"
-            android:layout_weight="2"
+            android:textSize="16dp" />
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
         <TextView
-            android:text="longitude:"
-            android:textColor="@color/grey"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:textSize="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/text_longitude"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="16dp" />
+
         <TextView
             android:id="@+id/country_longitude"
-            android:text="10"
-            android:textSize="16dp"
-            android:textColor="@color/black"
-            android:layout_weight="2"
-
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
     </LinearLayout>
+
     <TextView
-        android:text="BANK"
-        android:textSize="20dp"
-        android:textColor="@color/grey"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/text_bank"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:id="@+id/bank_name"
-            android:text="Jyske Bank, "
-            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="40"
             android:gravity="right"
-            android:textSize="18dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:text="Jyske Bank, "
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
         <TextView
             android:id="@+id/bank_city"
-            android:text="Hjørring"
-            android:textSize="18dp"
-            android:textColor="@color/black"
-            android:layout_weight="60"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:text="Hjørring"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
     </LinearLayout>
+
     <TextView
-        android:id="@+id/prepaid"
-        android:text="No"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:textAlignment="center"
+        android:id="@+id/bank_url"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:focusable="true"
+        android:linksClickable="true"
+        android:text="www.jyskebank.dk"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/bank_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+4589893300"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
     <Button
         android:id="@+id/ok"
-        android:text= "Ok"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Ok" />
 
 
 </LinearLayout>

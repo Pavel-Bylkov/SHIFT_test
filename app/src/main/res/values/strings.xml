@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">BIN Checker</string>
-    <string name="bin_label">Enter the first digits of a card number (BIN/IIN):</string>
+    <string name="bin_label">Enter the first digits of a card number (BIN):</string>
     <string name="btn_name">START</string>
+    <string name="text_bin">BIN</string>
+    <string name="text_scheme">SCHEME</string>
+    <string name="text_brand">BRAND</string>
+    <string name="text_card_number">CARD NUMBER</string>
+    <string name="text_length">LENGTH</string>
+    <string name="text_luhn">LUHN</string>
+    <string name="text_type">TYPE</string>
+    <string name="text_prepaid">PREPAID</string>
+    <string name="text_country">COUNTRY</string>
+    <string name="text_latitude">latitude:</string>
+    <string name="text_longitude">longitude:</string>
+    <string name="text_bank">BANK</string>
 </resources>
+
