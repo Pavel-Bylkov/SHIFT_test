@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.util.Log
 import io.reactivex.Observable
 import java.net.HttpURLConnection
 import java.net.URL
@@ -45,6 +46,7 @@ fun createGetRequest(headerKey:String, headerValue:String, url:String) = Observa
             it.onError(RuntimeException(urlConnection.responseMessage))
         else {
             val str = urlConnection.inputStream.bufferedReader().readText()
+            Log.d("test", str)
             it.onNext(str)
         }
     } finally {
